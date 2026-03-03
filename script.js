@@ -18,7 +18,7 @@ ScrollReveal().reveal('.home-image, .services-container, .protfolio-box, .contac
 // typed js
 
 const typed = new Typed('.multiple-text',{
-    strings:['Frontend Developer','Backend Developer'],
+    strings:['Software Developer','Machine Learning Engineer'],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
@@ -111,3 +111,17 @@ const typed = new Typed('.multiple-text',{
         btn5.textContent = "Read More";
       }
     });
+
+     const btn6= document.getElementById("btn6");
+    const moreText6 = document.getElementById("more6");
+
+    btn6.addEventListener("click", () => {
+      if (moreText6.style.display === "none" || moreText6.style.display === "") {
+        moreText6.style.display = "inline";
+        btn6.textContent = "Read Less";
+      } else {
+        moreText6.style.display = "none";
+        btn6.textContent = "Read More";
+      }
+    });
+    
